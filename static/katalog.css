@@ -1,0 +1,17 @@
+.main-table{
+    border-collapse: collapse;
+    margin : 25px 0;
+    font-size : 1.0em;
+    min-width: 1400px;
+  }
+.main-table thead tr {
+    background-color:	#009879;
+    color: #009879;
+    text-align: left;
+    font-weight: bold;
+}
+
+.main-table th,
+.main-table td{
+    padding: 12px 15px;
+}
