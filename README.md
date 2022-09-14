@@ -1,5 +1,5 @@
 # TUGAS 2
-Link heroku :
+Link heroku : https://pbptugas1hanif.herokuapp.com/
 
 ![alt text](https://github.com/IkhlasulHanif/Tugas2PBP/blob/main/images/bagan.png)
 1. Saat kita mengunjungi suatu web yang pertama terjadi adalah kita sebagai user meminta request kepada urls.py, selanjutnya urls.py akan memilih views yang sesuai request dari user. Kemudian, pada proses views.py juga menentukan hubungan antara models.py. Terdapat dua kasus, jika views.py memerlukan pertukaran data terhadap database maka transaksi dua arah tersebut dengan perantara yang diatur models.py, sedangkan jika tidak diperlukan pertukaran data maka views.py langsung menentukan page HTML yang tepat pada template. Jika terjadi pertukaran data, maka tidak jauh berbeda dimana views.py akan memilih page HTML yang tepat, tetapi akan menggunakan data melalui models.py. Terakhir HTML yang terpilih akan menampilkan response berupa tampilan web yang diinginkan oleh user.
