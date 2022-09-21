@@ -23,6 +23,6 @@ Link heroku : https://pbptugas1hanif.herokuapp.com/
    * release_date : TextField
    * review : TextField
   
-      Setelah itu saya membuat data yang dibutuhkan dalam format JSON. Terakhir saya membuat fungsi pada views.py untuk mengembalikan HTML, XML, dan JSON dan tentunya  menambahkan fungsi views.py ke urls.py pada folder mywatchlist dan juga project-django. Selanjutnya saya melakukan command git akar terdeploy.
+   Setelah itu saya membuat data yang dibutuhkan dalam format JSON. Terakhir saya membuat fungsi pada views.py untuk mengembalikan HTML, XML, dan JSON dan tentunya  menambahkan fungsi views.py ke urls.py pada folder mywatchlist dan juga project-django. Selanjutnya saya melakukan command git akar terdeploy.
   
  
