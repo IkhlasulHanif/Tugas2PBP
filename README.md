@@ -25,4 +25,11 @@ Link heroku : https://pbptugas1hanif.herokuapp.com/
   
    Setelah itu saya membuat data yang dibutuhkan dalam format JSON. Terakhir saya membuat fungsi pada views.py untuk mengembalikan HTML, XML, dan JSON dan tentunya  menambahkan fungsi views.py ke urls.py pada folder mywatchlist dan juga project-django. Selanjutnya saya melakukan command git akar terdeploy.
   
+4. Postman
+HTML
+![alt text](https://github.com/IkhlasulHanif/Tugas2PBP/blob/main/images/HTML.png)
+XML
+![alt text](https://github.com/IkhlasulHanif/Tugas2PBP/blob/main/images/XML.png)
+JSON
+![alt text](https://github.com/IkhlasulHanif/Tugas2PBP/blob/main/images/JSON.png)
  
