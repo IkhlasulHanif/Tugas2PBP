@@ -17,11 +17,12 @@ Link heroku : https://pbptugas1hanif.herokuapp.com/
 2. Kita membutuhkan data delivery untuk menghubungkan berbagai framework. Agar kita dapat menghubungkan framework-framework frontend dan backend kita perlu mempunyai suatu cara yang standar untuk menyimpan atau menerima data sehingga aplikasi dapat berjalan dengan baik.
 
 3. Pertama saya membuat app baru dengan nama mywatchlist. Selanjutnya saya membuat urls.py agar dapat routing. Kemudian saya membuat models.py dengan field:
-  * watched : TextField
-  * title : TextField
-  * rating : IntegerField
-  * release_date : TextField
-  * review : TextField
+   * watched : TextField
+   * title : TextField
+   * rating : IntegerField
+   * release_date : TextField
+   * review : TextField
+  
   Setelah itu saya membuat data yang dibutuhkan dalam format JSON. Terakhir saya membuat fungsi pada views.py untuk mengembalikan HTML, XML, dan JSON dan tentunya menambahkan fungsi views.py ke urls.py pada folder mywatchlist dan juga project-django. Selanjutnya saya melakukan command git akar terdeploy.
   
  
