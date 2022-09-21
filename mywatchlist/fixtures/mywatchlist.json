@@ -1,0 +1,112 @@
+[
+    {
+        "model": "mywatchlist.mywatchlistitem",
+        "pk": 1,
+        "fields": {
+            "watched" : "no",
+            "title" : "THE FAST AND THE FURIOUS",
+            "rating" : "53",
+            "release_date" : "2001",
+            "review" : "Sleek and shiny on the surface, The Fast and the Furious recalls those cheesy teenage exploitation flicks of the 1950s."
+        }
+    },
+    {
+        "model": "mywatchlist.mywatchlistitem",
+        "pk": 2,
+        "fields": {
+            "watched" : "no",
+            "title" : "2 FAST 2 FURIOUS",
+            "rating" : "36",
+            "release_date" : "2003",
+            "review" : "Beautiful people and beautiful cars in a movie that won't tax the brain cells."
+        }
+    },
+    {
+        "model": "mywatchlist.mywatchlistitem",
+        "pk": 3,
+        "fields": {
+            "watched" : "no",
+            "title" : "FAST & FURIOUS",
+            "rating" : "28",
+            "release_date" : "2009",
+            "review" : "While Fast and Furious features the requisite action and stunts, the filmmakers have failed to provide a competent story or compelling characters."
+        }
+    },
+    {
+        "model": "mywatchlist.mywatchlistitem",
+        "pk": 4,
+        "fields": {
+            "watched" : "no",
+            "title" : "FAST FIVE ",
+            "rating" : "78",
+            "release_date" : "2011",
+            "review" : "Sleek, loud, and over the top, Fast Five proudly embraces its brainless action thrills and injects new life into the franchise."
+        }
+    },
+    {
+        "model": "mywatchlist.mywatchlistitem",
+        "pk": 5,
+        "fields": {
+            "watched" : "no",
+            "title" : "FAST & FURIOUS 6 ",
+            "rating" : "70",
+            "release_date" : "2013",
+            "review" : "With high-octane humor and terrific action scenes, Fast & Furious 6 builds upon the winning blockbuster formula that made Fast 5 a critical and commercial success."
+        }
+    },
+    {
+        "model": "mywatchlist.mywatchlistitem",
+        "pk": 6,
+        "fields": {
+            "watched" : "no",
+            "title" : "THE FAST AND THE FURIOUS: TOKYO DRIFT",
+            "rating" : "38",
+            "release_date" : "2006",
+            "review" : "Eye-popping driving sequences coupled with a limp story and flat performances make this Drift a disappointing follow-up to previous Fast and Furious installments."
+        }
+    },
+    {
+        "model": "mywatchlist.mywatchlistitem",
+        "pk": 7,
+        "fields": {
+            "watched" : "no",
+            "title" : "FURIOUS 7",
+            "rating" : "81",
+            "release_date" : "2015",
+            "review" : "Serving up a fresh round of over-the-top thrills while adding unexpected dramatic heft, Furious 7 keeps the franchise moving in more ways than one."
+        }
+    },
+    {
+        "model": "mywatchlist.mywatchlistitem",
+        "pk": 8,
+        "fields": {
+            "watched" : "no",
+            "title" : "THE FATE OF THE FURIOUS",
+            "rating" : "67",
+            "release_date" : "2017",
+            "review" : "The Fate of the Furious opens a new chapter in the franchise, fueled by the same infectious cast chemistry and over-the-top action fans have come to expect."
+        }
+    },
+    {
+        "model": "mywatchlist.mywatchlistitem",
+        "pk": 9,
+        "fields": {
+            "watched" : "no",
+            "title" : "FAST & FURIOUS PRESENTS: HOBBS & SHAW",
+            "rating" : "68",
+            "release_date" : "2019",
+            "review" : "Hobbs & Shaw doesn't rev as high as the franchise's best installments, but gets decent mileage out of its well-matched stars and over-the-top action sequences."
+        }
+    },
+    {
+        "model": "mywatchlist.mywatchlistitem",
+        "pk": 10,
+        "fields": {
+            "watched" : "no",
+            "title" : "F9 THE FAST SAGA",
+            "rating" : "59",
+            "release_date" : "2021",
+            "review" : "F9 sends the franchise hurtling further over the top than ever, but director Justin Lin's knack for preposterous set pieces keeps the action humming."
+        }
+    }
+]
