@@ -1,0 +1,2 @@
+# TUGAS 3
+1. JSON singkatan dari JavaScript Object Notation (bahasa Indonesia: notasi objek JavaScript), adalah suatu format ringkas pertukaran data komputer atau untuk menyimpan dan mentransfer data (data delivery). XML (Extensible Markup Language) adalah bahasa markup yang dibuat oleh World Wide Consortium (W3C) untuk pertukaran dan penyimpanan data yang lebih ringkas, HTML adalah bahasa markup standar yang digunakan untuk membuat halaman website dan aplikasi w
