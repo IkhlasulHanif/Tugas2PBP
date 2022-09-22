@@ -3,7 +3,7 @@
         "model": "mywatchlist.mywatchlistitem",
         "pk": 1,
         "fields": {
-            "watched" : "no",
+            "watched" : false,
             "title" : "THE FAST AND THE FURIOUS",
             "rating" : "53",
             "release_date" : "2001",
@@ -14,7 +14,7 @@
         "model": "mywatchlist.mywatchlistitem",
         "pk": 2,
         "fields": {
-            "watched" : "no",
+            "watched" : false,
             "title" : "2 FAST 2 FURIOUS",
             "rating" : "36",
             "release_date" : "2003",
@@ -25,7 +25,7 @@
         "model": "mywatchlist.mywatchlistitem",
         "pk": 3,
         "fields": {
-            "watched" : "no",
+            "watched" : false,
             "title" : "FAST & FURIOUS",
             "rating" : "28",
             "release_date" : "2009",
@@ -36,7 +36,7 @@
         "model": "mywatchlist.mywatchlistitem",
         "pk": 4,
         "fields": {
-            "watched" : "no",
+            "watched" : false,
             "title" : "FAST FIVE ",
             "rating" : "78",
             "release_date" : "2011",
@@ -47,7 +47,7 @@
         "model": "mywatchlist.mywatchlistitem",
         "pk": 5,
         "fields": {
-            "watched" : "no",
+            "watched" : false,
             "title" : "FAST & FURIOUS 6 ",
             "rating" : "70",
             "release_date" : "2013",
@@ -58,7 +58,7 @@
         "model": "mywatchlist.mywatchlistitem",
         "pk": 6,
         "fields": {
-            "watched" : "no",
+            "watched" : false,
             "title" : "THE FAST AND THE FURIOUS: TOKYO DRIFT",
             "rating" : "38",
             "release_date" : "2006",
@@ -69,7 +69,7 @@
         "model": "mywatchlist.mywatchlistitem",
         "pk": 7,
         "fields": {
-            "watched" : "no",
+            "watched" : false,
             "title" : "FURIOUS 7",
             "rating" : "81",
             "release_date" : "2015",
@@ -80,7 +80,7 @@
         "model": "mywatchlist.mywatchlistitem",
         "pk": 8,
         "fields": {
-            "watched" : "no",
+            "watched" : false,
             "title" : "THE FATE OF THE FURIOUS",
             "rating" : "67",
             "release_date" : "2017",
@@ -91,7 +91,7 @@
         "model": "mywatchlist.mywatchlistitem",
         "pk": 9,
         "fields": {
-            "watched" : "no",
+            "watched" : false,
             "title" : "FAST & FURIOUS PRESENTS: HOBBS & SHAW",
             "rating" : "68",
             "release_date" : "2019",
@@ -102,7 +102,7 @@
         "model": "mywatchlist.mywatchlistitem",
         "pk": 10,
         "fields": {
-            "watched" : "no",
+            "watched" : false,
             "title" : "F9 THE FAST SAGA",
             "rating" : "59",
             "release_date" : "2021",
