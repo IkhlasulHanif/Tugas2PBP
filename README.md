@@ -12,7 +12,7 @@ Link heroku : https://pbptugas1hanif.herokuapp.com/
    + Selanjutnya, saya melakukan sedikit pengaturan pada file html, dimana isi table kita harus melakukan iterasi terhadap item_list yang telah kita definisikan              sebelumnya. Selain itu saya juga melakukan sedikit coba-coba melakukan pengaturan style.
    + Terakhir adalah tahap deployment heroku, yang perlu dilakukan adalah menambahkan secret key yang berupa HEROKU_API_KEY dan HEROKU_APP_NAME yang bisa didapatkan          melalui akun heroku saya. Terakhir dilakukan push atau bisa kita lakukan reattempt push agar web terdeploy secara otomatis.
 # TUGAS 3
-1. JSON singkatan dari JavaScript Object Notation (bahasa Indonesia: notasi objek JavaScript), adalah suatu format ringkas pertukaran data komputer atau untuk menyimpan dan mentransfer data (data delivery). XML (Extensible Markup Language) adalah bahasa markup yang dibuat oleh World Wide Consortium (W3C) untuk pertukaran dan penyimpanan data yang lebih ringkas, HTML adalah bahasa markup standar yang digunakan untuk membuat halaman website dan aplikasi. Dari sini kita dapat melihat HTML memiliki perbedaan definisi yang cukup jauh, dimana HTML bukan bahasa markup untuk data delivery. Sedangkan perbedaan antara XML dan JSON adalah XML cenderung lebih aman daripada JSON, sedangkan JSON lebih cepat daripada XML. JSON dapat menggunakan array dan XML tidak, tapi di XML kita dapat memberikan komen tetapi di JSON tidak.
+1. JSON singkatan dari JavaScript Object Notation (bahasa Indonesia: notasi objek JavaScript), adalah suatu format ringkas pertukaran data komputer atau untuk menyimpan dan mentransfer data (data delivery). XML (Extensible Markup Language) adalah bahasa markup yang dibuat oleh World Wide Consortium (W3C) untuk pertukaran dan penyimpanan data yang lebih ringkas, HTML adalah bahasa markup standar yang digunakan untuk membuat halaman website dan aplikasi. Dari sini kita dapat melihat HTML memiliki perbedaan definisi yang cukup jauh, dimana HTML bukan bahasa markup untuk data delivery. Sedangkan perbedaan antara XML dan JSON adalah XML cenderung lebih aman daripada JSON, sedangkan JSON lebih cepat daripada XML. Kemudian JSON dapat menggunakan array dan XML tidak, tapi di XML kita dapat memberikan komen tetapi di JSON tidak.
 
 2. Kita membutuhkan data delivery untuk menghubungkan berbagai framework. Agar kita dapat menghubungkan framework-framework frontend dan backend kita perlu mempunyai suatu cara yang standar untuk menyimpan atau menerima data sehingga aplikasi dapat berjalan dengan baik.
 
@@ -23,7 +23,7 @@ Link heroku : https://pbptugas1hanif.herokuapp.com/
    * release_date : TextField
    * review : TextField
   
-   Setelah itu saya membuat data yang dibutuhkan dalam format JSON. Terakhir saya membuat fungsi pada views.py untuk mengembalikan HTML, XML, dan JSON dan tentunya  menambahkan fungsi views.py ke urls.py pada folder mywatchlist dan juga project-django. Selanjutnya saya melakukan command git akar terdeploy.
+   Setelah itu saya membuat data yang dibutuhkan dalam format JSON. Terakhir saya membuat fungsi pada views.py untuk mengembalikan HTML, XML, dan JSON dan tentunya  menambahkan fungsi views.py ke urls.py pada folder mywatchlist dan juga project-django. Selanjutnya saya melakukan command git agar terdeploy.
   
 4. Postman
 HTML
