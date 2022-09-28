@@ -1,0 +1,72 @@
+{% extends 'base.html' %}
+
+ {% block content %}
+
+ <style> 
+  .main-table{
+    font-size: 12px;
+    box-shadow: 0 2px 15px rgba(64,64,64,.7);
+    border-radius: 12px 12px 0 0;
+    overflow: hidden;
+    border-collapse: collapse;
+    border-spacing: 0;
+    display: grid;
+    
+  }
+  .main-table th {
+    background-color:	rgb(128, 75, 0);
+    color: #000000;
+    text-align: left;
+    font-weight: bold;
+    font-family: 'Open Sans';
+    font-weight: 200;
+    text-transform: uppercase;
+  }
+
+  .main-table th,
+  .main-table td{
+    padding: 12px 15px;
+    text-align: center;
+    
+  }
+
+
+  .main-table td {
+    background-color : #FFE5B4;
+    font-family : sans-serif;
+  }
+  .header{
+    text-align: center;
+    font-family : sans-serif;
+  }
+</style>
+
+  <h1 class="header">Tugas 3 Assignment PBP</h1>
+
+  <h4 class="header">Name: Ikhlasul Akmal Hanif</h4>
+
+  <h4 class="header">Student ID: 2106650462</h4>
+
+  <h3 class="header">Selamat datang {{user}}</h3>
+
+  <table class = "main-table">
+    <tr>
+      <th>date</th>
+      <th>title</th>
+      <th>description</th>
+    </tr>
+    {% comment %} Add the data below this line {% endcomment %}
+    {% for item in item_list %}
+        <tr>
+            <td>{{item.date}}</td>
+            <td>{{item.title}}</td>
+            <td>{{item.description}}</td>
+        </tr>
+    {% endfor %}
+  </table>
+
+  <h5>Sesi terakhir login: {{ last_login }}</h5>
+  <button><a href="{% url 'todolist:logout' %}">Logout</a></button>
+  <button><a href="{% url 'todolist:create_task' %}">Tambah Task</a></button>
+ {% endblock content %}
+
