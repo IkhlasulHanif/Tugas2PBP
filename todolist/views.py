@@ -73,3 +73,23 @@ def create_task(request):
         return response
     context = {}
     return render(request, 'create_task.html', context)
+
+def delete_task(request, id):
+    task = Task.objects.get(pk=id)
+    task.delete()
+    response = HttpResponseRedirect(reverse("todolist:todolist"))
+    return response
+
+def is_finished(request,id):
+    task = Task.objects.get(pk=id)
+    task.is_finished = True
+    task.save()
+    response = HttpResponseRedirect(reverse("todolist:todolist"))
+    return response
+
+def is_not_finished(request, id):
+    task = Task.objects.get(pk=id)
+    task.is_finished = False
+    task.save()
+    response = HttpResponseRedirect(reverse("todolist:todolist"))
+    return response

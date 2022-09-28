@@ -7,7 +7,7 @@
     font-size: 12px;
     box-shadow: 0 2px 15px rgba(64,64,64,.7);
     border-radius: 12px 12px 0 0;
-    overflow: hidden;
+
     border-collapse: collapse;
     border-spacing: 0;
     display: grid;
@@ -61,6 +61,25 @@
             <td>{{item.date}}</td>
             <td>{{item.title}}</td>
             <td>{{item.description}}</td>
+            <td>{{item.is_finished}}</td>
+            <td>
+                <form method="POST">
+                  {% csrf_token %}
+                  <button><a href="{% url 'todolist:finished' item.id %}">Selesai</a></button>
+                </form>
+            </td>
+            <td>
+              <form method="POST">
+                {% csrf_token %}
+                <button><a href="{% url 'todolist:not_finished' item.id %}">Belum Selesai</a></button>
+              </form>
+          </td>
+          <td>
+            <form method="POST">
+              {% csrf_token %}
+              <button><a href="{% url 'todolist:delete_task' item.id %}">Hapus</a></button>
+            </form>
+        </td>
         </tr>
     {% endfor %}
   </table>
