@@ -1,91 +1,82 @@
 {% extends 'base.html' %}
 
  {% block content %}
-
- <style> 
-  .main-table{
-    font-size: 12px;
-    box-shadow: 0 2px 15px rgba(64,64,64,.7);
-    border-radius: 12px 12px 0 0;
-
-    border-collapse: collapse;
-    border-spacing: 0;
-    display: grid;
-    
-  }
-  .main-table th {
-    background-color:	rgb(128, 75, 0);
-    color: #000000;
-    text-align: left;
-    font-weight: bold;
-    font-family: 'Open Sans';
-    font-weight: 200;
-    text-transform: uppercase;
-  }
-
-  .main-table th,
-  .main-table td{
-    padding: 12px 15px;
-    text-align: center;
-    
-  }
-
-
-  .main-table td {
-    background-color : #FFE5B4;
-    font-family : sans-serif;
-  }
+ <style>
   .header{
     text-align: center;
     font-family : sans-serif;
+    font-weight: bold;
+    font-weight: 200;
   }
-</style>
 
-  <h1 class="header">Tugas 3 Assignment PBP</h1>
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  margin: auto;
+  margin-bottom: 0.2cm;
+}
 
-  <h4 class="header">Name: Ikhlasul Akmal Hanif</h4>
 
-  <h4 class="header">Student ID: 2106650462</h4>
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.589);
+}
 
-  <h3 class="header">Selamat datang {{user}}</h3>
+.container {
+  padding: 2px 16px;
+}
 
-  <table class = "main-table">
-    <tr>
-      <th>date</th>
-      <th>title</th>
-      <th>description</th>
-    </tr>
-    {% comment %} Add the data below this line {% endcomment %}
-    {% for item in item_list %}
-        <tr>
-            <td>{{item.date}}</td>
-            <td>{{item.title}}</td>
-            <td>{{item.description}}</td>
-            <td>{{item.is_finished}}</td>
-            <td>
-                <form method="POST">
-                  {% csrf_token %}
-                  <button><a href="{% url 'todolist:finished' item.id %}">Selesai</a></button>
-                </form>
-            </td>
-            <td>
-              <form method="POST">
-                {% csrf_token %}
-                <button><a href="{% url 'todolist:not_finished' item.id %}">Belum Selesai</a></button>
-              </form>
-          </td>
-          <td>
-            <form method="POST">
-              {% csrf_token %}
-              <button><a href="{% url 'todolist:delete_task' item.id %}">Hapus</a></button>
-            </form>
-        </td>
-        </tr>
-    {% endfor %}
-  </table>
+.nav.navbar-nav.navbar-right {
+    color: white;
+}
+.header{
+    text-align: center;
+    font-family : sans-serif;
+    margin-top: 0.5cm;
+  }
 
+.body{
+  background-color: bisque;
+}
+
+ </style>
+
+  <head>
+    <title>todolist</title>
+  </head>
+  <nav class="navbar navbar-expand-lg bg-dark">
+    <a class = "btn btn-dark" href="{% url 'todolist:logout' %}">Logout</a>
+    <a class="btn btn-dark" href="{% url 'todolist:create_task' %}">Tambah Task</a>
+  </nav>
+  <h4 class="header">Selamat datang {{user}}</h4>
+  <div class = "container">
+    <div class = "row">
+        {% for item in item_list %}
+        <div class="col-12 col-md-6 col-lg-4 col-xxl-3 mx-auto">
+          <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="https://img.freepik.com/free-vector/illustration-checklist-clipboard_53876-43946.jpg?w=2000" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">{{item.title}}</h5>
+              <p class="card-text">{{item.description}}</p>
+              <p class="card-text">Sudah dikerjakan : {{item.is_finished}}</p>
+                
+            </div>
+            <div class="card-body">
+                <a class = "btn btn-primary" href="{% url 'todolist:finished' item.id %}">Selesai</a>
+                <a class = "btn btn-danger" href="{% url 'todolist:not_finished' item.id %}">Belum Selesai</a>
+            </div>
+            <div class="card-body">
+              <a class = "btn btn-dark" href="{% url 'todolist:delete_task' item.id %}">Hapus</a>
+            </div>
+            <div class="card-footer">
+              {{item.date}}
+            </div>
+          </div>
+        </div>
+        
+      {% endfor %}
+    </div>
+  </div>
+    
   <h5>Sesi terakhir login: {{ last_login }}</h5>
-  <button><a href="{% url 'todolist:logout' %}">Logout</a></button>
-  <button><a href="{% url 'todolist:create_task' %}">Tambah Task</a></button>
  {% endblock content %}
 
