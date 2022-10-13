@@ -84,7 +84,7 @@
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-            <button id="button" type="button" class="btn btn-primary">Save changes</button>
+            <button id="addButton" type="button" class="btn btn-primary">Save changes</button>
           </div>
       </form>
       </div>
@@ -111,8 +111,11 @@
             <h5 class="card-title">${item.fields.title}</h5>
             <p class="card-text">${item.fields.description}</p>
             <p class="card-text">Sudah dikerjakan : ${Boolean(item.fields.is_finished)}</p>
-              
           </div>
+            
+          <div class="card-body">
+              <a class="btn btn-danger" onclick="deleteTask(${item.pk})">Hapus</a>
+          </div>             
           <div class="card-footer">
             ${item.fields.date}
           </div>
@@ -131,8 +134,15 @@
     return false
   }
 
+  function deleteTask(id) {
+    console.log(id)
+    let url = "/todolist/delete/" + id;
+    fetch(url).then(refreshTask)
+  }
 
-
+  document.getElementById('addButton').onclick = addTask
+  refreshTask()
+ 
 </script>
 
   <h5>Sesi terakhir login: {{ last_login }}</h5>

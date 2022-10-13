@@ -15,6 +15,7 @@ urlpatterns = [
     path('<int:id>/finished', is_finished, name ='finished'),
     path('<int:id>/not-finished', is_not_finished, name='not_finished'),
     path('json/', show_json, name='show_json'),
-    path('add/', add_todolist_item, name="add_todolist_item")
+    path('add/', add_todolist_item, name="add_todolist_item"),
+    path('delete/<int:id>', delete_task, name='delete_task')
     
 ]

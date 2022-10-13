@@ -78,8 +78,7 @@ def create_task(request):
 def delete_task(request, id):
     task = Task.objects.get(pk=id)
     task.delete()
-    response = HttpResponseRedirect(reverse("todolist:todolist"))
-    return response
+    return HttpResponse(b"DELETED", status=201)
 
 def is_finished(request,id):
     task = Task.objects.get(pk=id)
