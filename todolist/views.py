@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from django.http import HttpResponse
+from django.http import HttpResponse, HttpResponseNotFound
 from django.core import serializers
 from django.shortcuts import redirect
 from django.contrib.auth.forms import UserCreationForm
@@ -12,6 +12,7 @@ from django.http import HttpResponseRedirect
 from django.urls import reverse
 from todolist.models import Task
 from django.contrib.auth.models import User
+
 
 # Create your views here.
 def register(request):
@@ -93,3 +94,23 @@ def is_not_finished(request, id):
     task.save()
     response = HttpResponseRedirect(reverse("todolist:todolist"))
     return response
+
+@login_required(login_url='/todolist/login/')
+def show_json(request):
+    data = Task.objects.filter(user = request.COOKIES['user'])
+    return HttpResponse(serializers.serialize("json", data), content_type="application/json")
+
+@login_required(login_url='/todolist/login/')
+def add_todolist_item(request):
+    if request.method == 'POST':
+        user_id = request.COOKIES['user']
+        date = datetime.datetime.now()
+        title = request.POST.get('title')
+        description = request.POST.get('description')
+        
+        new_task = Task(user = User.objects.get(pk = user_id), date = date, title = title, description = description)
+        new_task.save()
+
+        return HttpResponse(b"CREATED", status=201)
+
+    return HttpResponseNotFound()
